@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
 });
 require('./app/routes/auth.routes')(app);
 require('./app/routes/user.routes')(app);
-
+require('./app/routes/recette.routes')(app);
 // Configuration du port et lancement du serveur
 const PORT = 8080;
 app.listen(PORT, () => {
